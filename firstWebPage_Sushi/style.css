@@ -1,0 +1,28 @@
+
+body{
+  background-color: black;
+  color:yellow;
+}
+
+h1{
+  text-align:center;
+  color:pink;
+}
+
+th{
+  background-color: #F7FAAA;
+  color:red;
+}
+
+table, td,  th {
+    border: 1px solid black;    
+}
+
+a{
+  color: blue;
+}
+
+.index
+{
+  color: green;
+}
