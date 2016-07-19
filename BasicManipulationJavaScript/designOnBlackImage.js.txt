@@ -1,0 +1,27 @@
+// write your code here
+var image = new SimpleImage(200,200);
+
+
+for (var p of image.values()) {
+    var x = p.getX();
+    var y = p.getY();
+    
+    
+    if (x > 200-y) {
+        p.setRed(255);
+    }
+    
+    if (x>y) {
+        p.setRed(255);
+    }
+    
+     if (x>20) {
+        p.setRed(255);
+    }
+    
+}
+
+
+
+
+print(image);

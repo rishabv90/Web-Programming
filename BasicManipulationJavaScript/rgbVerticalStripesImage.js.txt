@@ -1,0 +1,28 @@
+// write your code here
+var image = new SimpleImage("usain.jpg");
+for (var pixel of image.values()){
+    
+    if(pixel.getX()<100){
+         pixel.setRed(255);
+        // pixel.setBlue(255);
+         //pixel.setGreen(0);
+        
+    }
+    
+     if(pixel.getX()>=100 && pixel.getX() < 200){
+        // pixel.setRed(255);
+         //pixel.setBlue(0);
+         pixel.setGreen(255);
+        
+    }
+    
+    if(pixel.getX()>=200 && pixel.getX() < 300){
+         //pixel.setRed(0);
+         pixel.setBlue(255);
+         //pixel.setGreen(0);
+        
+    }
+    
+}
+
+print(image);
