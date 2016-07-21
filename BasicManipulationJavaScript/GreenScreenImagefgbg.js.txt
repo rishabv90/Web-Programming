@@ -1,0 +1,28 @@
+//Rishab Verma 21st July 2016
+//Java Script program for green screen algorithm
+//Displays forgroud image on top of a bakcground image.
+
+var fgImage = new SimpleImage("drewRobert.png"); // fore ground image
+var bgImage = new SimpleImage("dinos.png");//background Image
+var output = new SimpleImage(fgImage.getWidth(), fgImage.getHeight());
+
+for (var p of fgImage.values()){
+    if(p.getGreen() > 200){
+        
+        
+        var x = p.getX();
+        var y = p.getY();
+        var bgPix = bgImage.getPixel(x,y);
+        
+        output.setPixel(x,y, bgPix);
+        
+    }
+    else {
+        output.setPixel(p.getX(), p.getY(), p);
+        
+    }
+    
+    print(output);
+    
+    
+}
